@@ -2,14 +2,23 @@
 
 namespace LabZoo
 {
-    abstract class Animal
+    public class Animal
     {
-        public abstract int Mass { get; set; }
-        public abstract string FoodType { get; set; }
-        public abstract string SleepType { get; set; }
-
-        public abstract string FoodSearch();
-        public abstract string FoodSearch();
-
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World");
+        }
     }
+
+        public abstract class Animals
+        {
+            public int Mass { get; set; }
+            public int Legnth { get; set; }
+            public bool Fur { get; }
+
+            public abstract string Eat();
+            public abstract bool Nocturnal();
+            public abstract string Sounds();
+        }
 }
+
