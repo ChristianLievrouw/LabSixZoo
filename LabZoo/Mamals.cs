@@ -1,56 +1,33 @@
 ﻿using System;
 namespace LabZoo
 {
-
-    class Mamals : Animals
+    public class Mamal : Animal
     {
-        public bool Carnivorous { get; set; }
-
-        public bool Marsupial => false;
-
-        public override string Eat()
+        public virtual bool Marsupial { get; set; }
+        public bool Swimmer => true;
+        public override string FoodSearch()
         {
-            return "Eats food";
-        }
-
-        public override bool Nocturnal()
-        {
-            return false;
-        }
-
-        public override string Sounds()
-        {
-            return "Makes a Noise";
+            return "I'm hungry. I'll search for food.";
         }
     }
-
-    class Tiger : Mamals
+    public class Carnivor : Mamal
     {
-        public override string Eat()
+        public override string FoodSearch()
         {
-            return "Eats Carole Baskin";
-        }
-
-        public override bool Nocturnal() => false;
-
-        public override string Sounds()
-        {
-            return "Rawr";
+            base.FoodSearch();
+            return "I'll hunt for an animal to eat!";
         }
     }
-
-    class Kangaroo : Mamals
+    public class Herbavor : Mamal
     {
-        public override string Eat()
+        public override string FoodSearch()
         {
-            return "Eats Grass";
+            base.FoodSearch();
+            return "I'll find some plants to eat!";
         }
-
-        public override bool Nocturnal() => false;
-
-        public override string Sounds()
-        {
-            return "Kangaroo noise";
-        }
+    }
+    class Kangeroo : Herbavor
+    {
+        public override bool Marsupial => true;
     }
 }

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabZoo", "LabZoo\LabZoo.csproj", "{47BB0377-AA78-4CA6-AA61-AF34FAAC8EBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooTests", "ZooTests\ZooTests.csproj", "{099B5B76-FE96-4F94-B4D2-6245A99B6D01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{47BB0377-AA78-4CA6-AA61-AF34FAAC8EBC}.Release|x64.Build.0 = Release|Any CPU
 		{47BB0377-AA78-4CA6-AA61-AF34FAAC8EBC}.Release|x86.ActiveCfg = Release|Any CPU
 		{47BB0377-AA78-4CA6-AA61-AF34FAAC8EBC}.Release|x86.Build.0 = Release|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Debug|x64.Build.0 = Debug|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Debug|x86.Build.0 = Debug|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Release|x64.ActiveCfg = Release|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Release|x64.Build.0 = Release|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Release|x86.ActiveCfg = Release|Any CPU
+		{099B5B76-FE96-4F94-B4D2-6245A99B6D01}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
