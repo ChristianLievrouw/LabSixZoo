@@ -1,10 +1,16 @@
 ﻿using System;
 namespace LabZoo
 {
-    public class Mamal : Animal
+    public abstract class Mamal : Animal
     {
+        public override int SleepHours()
+        {
+            return 8;
+        }
         public virtual bool Marsupial { get; set; }
         public bool Swimmer => true;
+        public override string FightOrFlight => "fight";
+        public override string SleepType => "dinural";
         public override string FoodSearch()
         {
             return "I'm hungry. I'll search for food.";
