@@ -42,7 +42,7 @@ namespace LabZoo
 
     public class Bat : Mamal, IFlight, ISwim
     {
-        public int FlightDistance => 1000;
+        public int FlightDistance => 500;
 
         public int FlightSpeed => 35;
 

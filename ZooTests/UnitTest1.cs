@@ -61,6 +61,7 @@ namespace ZooTests
 
             Assert.Equal(5, bear.SwimSpeed);
             Assert.Equal("I can swim", bear.Swim());
+            Assert.Equal("I'm an animal", bear.Statement());
         }
 
         [Fact]

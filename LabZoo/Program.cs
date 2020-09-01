@@ -28,6 +28,10 @@ namespace LabZoo
         {
             return "I can get around";
         }
+        public virtual string Statement()
+        {
+            return "I'm an animal";
+        }
     }
 }
 
