@@ -36,11 +36,12 @@ namespace ZooTests
         public void Robin_has_correct_attributes()
         {
             //Arange and Act
-            Flight robin = new Flight();
+            BaldEagle baldEagle = new BaldEagle();
             //Assert 
             string expectedMovement = "I flap my wings and fly";
-            Assert.Equal(expectedMovement, robin.Movement());
-            Assert.Equal(6, robin.SleepHours());
+            Assert.Equal(expectedMovement, baldEagle.Movement());
+            Assert.Equal(6, baldEagle.SleepHours());
+            Assert.Equal(300, baldEagle.FlightDistance);
         }
 
         [Fact]
@@ -50,6 +51,30 @@ namespace ZooTests
             Cobra bill = new Cobra();
             //Assert 
             Assert.Equal("hiss", bill.Sounds());
+        }
+
+        [Fact]
+        public void Mammal_swim_tests()
+        {
+            Bear bear = new Bear();
+
+
+            Assert.Equal(5, bear.SwimSpeed);
+            Assert.Equal("I can swim", bear.Swim());
+            Assert.Equal("I'm an animal", bear.Statement());
+        }
+
+        [Fact]
+        public void Bat_swims_and_flies()
+        {
+            //Arange and act
+            Bat bat = new Bat();
+            //Assert
+            Assert.Equal(500, bat.FlightDistance);
+            Assert.Equal(60, bat.FlightSpeed);
+            Assert.Equal(10, bat.SwimDistance);
+            Assert.Equal(2, bat.SwimSpeed);
+            Assert.Equal("I can kind of swim!", bat.Swim());
         }
     }
 }

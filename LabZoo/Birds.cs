@@ -17,15 +17,20 @@ namespace LabZoo
 
         public override string FightOrFlight => "flight";
     }
-        public class Flight : Bird
-        {
-            public override string Movement()
-            {
-                return "I flap my wings and fly";
-            }
-        }
 
-        public class Flightless : Bird
+    public abstract class Flight : Bird, IFlight
+    {
+        public abstract int FlightDistance { get; }
+
+        public abstract int FlightSpeed { get; } 
+
+        public override string Movement()
+        {
+            return "I flap my wings and fly";
+        }
+    }
+
+    public class Flightless : Bird
         {
             public override string Movement()
             {
@@ -41,9 +46,13 @@ namespace LabZoo
             }
         }
 
-        class BladEagle : Flight
+        public class BaldEagle : Flight, IFlight
         {
-            public override string Home()
+        public override int FlightDistance => 300; 
+
+        public override int FlightSpeed => 100;
+
+        public override string Home()
             {
                 return "The great down under";
             }
