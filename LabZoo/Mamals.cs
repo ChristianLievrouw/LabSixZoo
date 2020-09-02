@@ -44,7 +44,7 @@ namespace LabZoo
     {
         public int FlightDistance => 500;
 
-        public int FlightSpeed => 35;
+        public int FlightSpeed => 60;
 
         public int SwimSpeed => 2;
 
@@ -52,7 +52,7 @@ namespace LabZoo
 
         public string Swim()
         {
-            return "I can kind of swim";
+            return "I can kind of swim!";
         }
     }
 
